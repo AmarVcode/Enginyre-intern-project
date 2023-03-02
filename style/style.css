@@ -1,5 +1,280 @@
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-sizing: border-box;
+  transition: 500ms;
+}
 
-/*# sourceMappingURL=style.css.map */
+body{
+  background-color: rgba(245, 222, 179, 0.445);
+}
+
+.navbar a{
+  font-size: .85rem;
+  font-weight: 500;
+  color: black;
+  text-decoration: none;
+  padding: 1.2em;
+  background-color: white;
+}
+
+.navbar a:hover{
+  color: rgba(255, 0, 0, 0.7);
+}
+
+header{
+  width: 100vw;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-items: center;
+  justify-content: space-around;
+  background-color: white;
+}
+
+.btn{
+  display: block;
+  background-color: red !important;
+  color: white !important;
+  padding: 1.2em;
+  padding-top:.2em !important;
+  padding-bottom: .2em !important;
+  border-radius: 15px;
+  opacity: .8;
+  text-decoration: none;
+  font-size: .85rem;
+  border: 2px solid red;
+  width: fit-content;
+  
+}
+
+.btn:hover{
+color: red !important;
+background-color: white !important;
+}
+#menu{
+  display: none;
+  padding: 1em;
+}
+@media (max-width:625px) {
+  #menu{
+    display: block;
+  }
+  header{
+    grid-template-columns: 80% 20% !important;
+  }
+  .navbar{
+    width: 100%;
+    position: absolute;
+    display: grid;
+    grid-template-columns: 100%;
+    text-align: center;
+    margin-top: 300px;
+    transform: scale(1,0);
+    transform-origin: top;
+  }
+  .block1 p{
+font-size: .7rem;
+  }
+  .block1 h2{
+    font-size: 1.2rem;
+      }
+      .block1 a{
+        font-size: .6rem !important;
+          }
+
+          footer a{
+            font-size: .7rem !important;
+          }
+}
+
+
+.show{
+  transform: scale(1,1) !important;
+}
+
+.bg img{
+  width: 100%;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+
+.head{
+  text-align: center;
+  padding: 1em;
+  font-size: 1.8rem;
+  color: rgba(0, 0, 0, 0.801);
+}
+.head2{
+  padding: .5em;
+  font-size: 1.6rem;
+  color: rgba(0, 0, 0, 0.801);
+}
+
+.block1 p{
+  padding: 1em;
+}
+
+.block1{
+  display: grid;
+  grid-template-columns:  50% 50%;
+  max-width: 800px;
+  margin: auto;
+  padding: 1em;
+}
+
+.content{
+  padding: 1em;
+}
+
+.block1 img{
+  border-radius: 40px;
+  width: 100%;
+}
+
+.block2{
+  display: flex;
+  max-width: 800px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+
+}
+
+
+
+.mini{
+  width: 150px;
+  text-align: center;
+  margin: 1em;
+}
+
+.mini2{
+  width: 150px !important;
+  text-align: center;
+  margin: 1em;
+}
+
+.mini img{
+  width: 100%;
+}
+
+.white{
+background-color: white;
+}
+
+.blue{
+  background-color: #26b3ac;
+}
+.blue img{
+  padding: 2em !important;
+  padding-bottom: 0 !important;
+}
+.blue h2{
+  font-size: 1rem !important;
+  color: white !important;
+
+}
+
+.mini h2{
+  color: rgba(0, 0, 0, 0.8);
+  font-size: .9rem;
+}
+
+.mini p{
+  font-size: .8rem;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.arrow svg{
+  width: 2rem;
+  cursor: pointer;
+padding: .5em;
+}
+
+.slider{
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  margin: auto;
+  max-width: 800px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(245, 222, 179, 0.082);
+  padding-block: 2em;
+}
+
+.slideinfo{
+  width: 200px;
+  overflow: hidden;
+  border-radius: 20px;
+  border: 2px solid #26b3ac;
+  background-color: rgba(245, 222, 179, 0.082);
+  margin: .4em;
+}
+
+.slideinfo p{
+  font-size: .8rem;
+  padding: 1em;
+  
+}
+
+.slideinfo img{
+  width: 100%;
+}
+
+.slideblock{
+  display: inline-flex;
+  position: relative;
+  translate: 0px;
+}
+.slide{
+  overflow: hidden;
+
+}
+
+.para{
+  text-align: center;
+  font-size: light;
+  font-size: 1.4rem;
+  padding: .5em;
+}
+
+footer{
+  width: 100%;
+  background-color: #26b3ac;
+  display: flex;
+  padding: 2em;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+footer > div{
+max-width: 500px;
+}
+
+footer p{
+  font-size: .8rem ;
+  color: white;
+}
+
+footer svg{
+width: 2rem;
+fill: white;
+}
+
+.flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+footer a{
+text-decoration: none;
+color: white;
+margin: 1em;
+}
+
+.pararight{
+  text-align: right;
+}
