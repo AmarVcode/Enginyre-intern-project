@@ -55,6 +55,7 @@ background-color: white !important;
 #menu{
   display: none;
   padding: 1em;
+  cursor: pointer;
 }
 @media (max-width:625px) {
   #menu{
